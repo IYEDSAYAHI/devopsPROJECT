@@ -38,8 +38,8 @@ class OperatorServiceImplTest {
     void retrieveAllOperators() {
         Operator operator = new Operator();
         operator.setIdOperateur(1L);
-        operator.setFname("testOp");
-        operator.setLname("testtesttest");
+        operator.setFname("test");
+
 
         Mockito.when(operatorRepository.findById(1L)).thenReturn(Optional.of(operator));
 
