@@ -41,6 +41,17 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>1.7.0</version> <!-- Update version to a valid version -->
+        </dependency>
+
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
@@ -84,9 +95,8 @@
     <distributionManagement>
         <repository>
             <id>deplo</id>
-            <url>http://192.168.33.10:8081/repository/maven-releases/</url>
+            <url>http://192.168.33.10:8081//repository/maven-releases/</url>
         </repository>
-
     </distributionManagement>
 
     <build>
